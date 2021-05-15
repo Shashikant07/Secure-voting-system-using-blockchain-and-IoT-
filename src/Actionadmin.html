@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./css/adminaction.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+    <img src="./images/voteimg.jpg" alt="add voters">
+    <h2>Add the Voters</h2>
+    <button onclick="addusers()"; class="button">Add Voters>></button>
+    <script>
+        function addusers() {
+          location.replace("http://localhost/biometricvotingsystem/admin.php")
+        }
+        </script>
+   </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <img src="./images/viewCount.jpg" alt="viewCount">
+    <h2>View vote count</h2>
+    <button onclick="result()"; class="button">View Vote Count >></button>
+    <script>
+        function result() {
+          location.replace("http://localhost:3000/viewcount.html")
+        }
+        </script>
+  </div>
+  <button onclick="logout()"; class="buttonlogout"; style="float:right;">Logout</button>
+  <script>
+    function logout() {
+      location.replace("http://localhost/biometricattendance/adminlogin.php")
+    }
+    </script>
+</div>
+</body>
+</html> 
